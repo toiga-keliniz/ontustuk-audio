@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оңтүстік халық әндері</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Оңтүстік халық әндері</h1>
+    </header>
+    <main>
+        <div class="audio-container">
+            <div class="audio-info">
+                <h2>01. Абай көк. халық әні. Орындаған Ә.Серікбаев</h2>
+                <audio id="audio1" src="audio/1.mp3"></audio>
+                <div class="controls">
+                    <button id="play1" onclick="toggleAudio('audio1')"><i class="fas fa-play"></i></button>
+                    <input type="range" id="progress1" value="0">
+                    <span id="time1">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="audio-container">
+            <div class="audio-info">
+                <h2>02. Ақ бидай. халық әні, орындаған Б.Талғат</h2>
+                <audio id="audio2" src="audio/2.mp3"></audio>
+                <div class="controls">
+                    <button id="play2" onclick="toggleAudio('audio2')"><i class="fas fa-play"></i></button>
+                    <input type="range" id="progress2" value="0">
+                    <span id="time2">0:00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
